@@ -117,13 +117,14 @@ header h1 {
 
 ul.posts {
     margin-top: 50px;
+    padding-left: 0px;
     display: block;
     width: 100%;
     list-style: none;
 }
 
 .posts li {
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 
 .posts li span {
@@ -131,7 +132,7 @@ ul.posts {
 }
 
 .posts li span:last-child {
-    font-size: .6em;
+    font-size: .7em;
 }
 
 .posts li span.excerpt {
@@ -234,14 +235,15 @@ footer {
 
   ul.posts {
       margin-top: 0px;
+      padding-left: 0px;
   }
   
   .posts li {
-    font-size: 4vw;
+      font-size: 3.5vw;
   }
 
   .posts li span:last-child {
-    font-size: .6em;
+    font-size: .56em;
   }
 
   .posts li span.excerpt {
@@ -256,6 +258,7 @@ footer {
 
   ul.posts {
       margin-top: 0px;
+      padding-left: 0px;
   }
 
   .posts li {
@@ -263,7 +266,7 @@ footer {
   }
 
   .posts li span:last-child {
-      font-size: .8em;
+      font-size: .7em;
   }
 
   .posts li span.excerpt {
