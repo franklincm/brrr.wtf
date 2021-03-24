@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <i class="las la-angle-double-right"></i>
+    <a href="{{ post.url | relative_url }}">
+      <span>{{ post.title |sha1 }}</span>
+      {{ post.title }}
+    </a>
+    <br>
+    <span class="excerpt">
+      {{ post.description }}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
