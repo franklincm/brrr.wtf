@@ -5,3 +5,15 @@ description: panic.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+jekyll_compose:
+  default_front_matter:
+    posts:
+      title:
+      description:
+      author: gnullbyte
+      tags:
+    drafts:
+      title:
+      description:
+      author: gnullbyte
+      tags:        
