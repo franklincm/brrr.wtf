@@ -10,10 +10,10 @@ jekyll_compose:
     posts:
       title:
       description:
-      author: gnullbyte
+      author: chase
       tags:
     drafts:
       title:
       description:
-      author: gnullbyte
+      author: chase
       tags:        
