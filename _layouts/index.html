@@ -8,6 +8,7 @@ layout: default
     <a href="{{ post.url | relative_url }}">
       <span>{{ post.title |sha1 }}</span>
       {{ post.title }}
+      <span>{{ post.date | date_to_string }}</span>
     </a>
     <br>
     <span class="excerpt">
