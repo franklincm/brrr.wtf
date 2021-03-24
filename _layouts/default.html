@@ -32,6 +32,13 @@
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
 
+        <hr>
+        <p>
+        <span>{% for tag in site.tags %}</span>
+        {{ tag[0] }}
+        {% endfor %}
+        </p>
+
       </header>
       <section>
 
