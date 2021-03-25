@@ -19,5 +19,5 @@ jekyll_compose:
       tags:        
 plugins:
   - jekyll-paginate
-paginate: 5
+paginate: 10
 paginate_path: "blog/page:num"
