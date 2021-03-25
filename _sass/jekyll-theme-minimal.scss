@@ -132,6 +132,7 @@ ul.posts {
 }
 
 .posts li span:last-child {
+    display: inline-block;
     font-size: .7em;
 }
 
@@ -263,6 +264,10 @@ footer {
 
   .posts li {
     font-size: 4vw;
+  }
+
+  .posts li span:first-child {
+      display: none;
   }
 
   .posts li span:last-child {
