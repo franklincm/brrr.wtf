@@ -11,13 +11,15 @@ jekyll_compose:
       title:
       description:
       author: chase
-      tags:
+      categories:
     drafts:
       title:
       description:
       author: chase
-      tags:        
+      categories:
 plugins:
   - jekyll-paginate
+  - jekyll-category-pages
 paginate: 10
 paginate_path: "blog/page:num"
+permalink: /:year/:month/:day/:title:output_ext

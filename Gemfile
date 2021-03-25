@@ -6,3 +6,4 @@ gemspec
 
 gem 'jekyll-compose', group: [:jekyll_plugins]
 gem 'jekyll-paginate'
+gem 'jekyll-category-pages'
