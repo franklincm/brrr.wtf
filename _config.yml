@@ -17,3 +17,7 @@ jekyll_compose:
       description:
       author: chase
       tags:        
+plugins:
+  - jekyll-paginate
+paginate: 5
+paginate_path: "blog/page:num"
