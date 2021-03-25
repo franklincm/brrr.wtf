@@ -34,11 +34,14 @@
 
         <hr>
         <p>
-          <span>{% for category in site.categories %}</span>
-          <a href="{{ site.url }}/category/{{category | first | slugify }}/index.html">
-            {{ category[0] }}
-          </a>
-        {% endfor %}
+          categories:
+          {% for category in site.categories %}
+          <span class="category">
+            <a href="{{ site.url }}/category/{{category | first | slugify }}/index.html">
+              {{ category[0] }}
+            </a>
+          </span>
+          {% endfor %}
         </p>
 
       </header>
