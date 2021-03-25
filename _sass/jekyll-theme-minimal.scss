@@ -117,20 +117,26 @@ header h1 {
 
 ul.posts {
     margin-top: 50px;
+    padding-left: 0px;
     display: block;
     width: 100%;
     list-style: none;
 }
 
 .posts li {
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 
 .posts li span {
     color: #6c6c6c;
 }
 
-.posts .excerpt {
+.posts li span:last-child {
+    display: inline-block;
+    font-size: .7em;
+}
+
+.posts li span.excerpt {
     font-size: .7em;
     padding-left: 2em;
 }
@@ -200,6 +206,15 @@ footer {
   .posts li {
     font-size: 3vw;
   }
+
+  .posts li span:last-child {
+    font-size: .5em;
+  }
+
+  .posts li span.excerpt {
+      font-size: .7em;
+  }
+  
 }
 
 @media print, screen and (max-width: 720px) {
@@ -221,10 +236,19 @@ footer {
 
   ul.posts {
       margin-top: 0px;
+      padding-left: 0px;
   }
   
   .posts li {
-    font-size: 4vw;
+      font-size: 3.5vw;
+  }
+
+  .posts li span:last-child {
+    font-size: .56em;
+  }
+
+  .posts li span.excerpt {
+      font-size: .8em;
   }
 }
 
@@ -235,10 +259,23 @@ footer {
 
   ul.posts {
       margin-top: 0px;
+      padding-left: 0px;
   }
 
   .posts li {
     font-size: 4vw;
+  }
+
+  .posts li span:first-child {
+      display: none;
+  }
+
+  .posts li span:last-child {
+      font-size: .7em;
+  }
+
+  .posts li span.excerpt {
+      font-size: .9em;
   }
 }
 
