@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<ul class="posts">
+  {% for post in page.posts %}
+  <li>
+    <i class="las la-angle-double-right"></i>
+    <a href="{{ post.url | relative_url }}">
+      <span>{{ post.title |sha1 }}</span>
+      {{ post.title }}
+      <span>{{ post.date | date_to_string }}</span>
+    </a>
+    <br>
+    <span class="excerpt">
+      {{ post.description }}
+    </span>
+  </li>
+  {% endfor %}
+</ul>

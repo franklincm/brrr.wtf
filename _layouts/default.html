@@ -22,7 +22,7 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p><strike>{{ site.description_strike }}</strike> {{ site.description | default: site.github.project_tagline }} <span style="float: right;"><a href="">contact</a></span></p>
+        <p><strike>{{ site.description_strike }}</strike> {{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -34,9 +34,14 @@
 
         <hr>
         <p>
-        <span>{% for tag in site.tags %}</span>
-        {{ tag[0] }}
-        {% endfor %}
+          categories:
+          {% for category in site.categories %}
+          <span class="category">
+            <a href="{{ site.url }}/category/{{category | first | slugify }}/index.html">
+              {{ category[0] }}
+            </a>
+          </span>
+          {% endfor %}
         </p>
 
       </header>
