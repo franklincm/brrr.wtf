@@ -1,4 +1,6 @@
 # brrr.wtf
+jekyll static blog
+
 
 ## commands
 ```bash
