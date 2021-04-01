@@ -9,6 +9,9 @@ layout: default
 
 {{content}}
 
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+category:
+{% for category in page.categories %}
+<span class="category"><a href="{{ site.url }}/category/{{category | first | slugify }}/index.html"></span>
+  {{ category }}
+</a>
+{% endfor %}
